@@ -1,0 +1,32 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #064073;
+	background: #faf9f8;
+}
+#title {
+	font-size: 140%;
+}
+
+#tooltip {
+	position: absolute;
+	text-align: center;
+	width: 6rem;
+	height: 2.5rem;
+	padding: 0.2rem;
+	font: 1rem sans-serif;
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 0.5rem;
+	pointer-events: none;
+}
+.bar:hover {
+	fill: salmon;
+}
+.dot {
+  stroke: #453e37;
+  opacity: 0.8;
+}

@@ -44,6 +44,7 @@ Once you're done, submit the URL to your working project with all its tests pass
 
 
 
-http://3mu.ru/?p=13857
+
 https://printgames.ru/nastolnaya-igra-monopoliya/
 https://art-fashn.ru/prochee/sushilka-dlya-belya-svoimi-rukami-varianty-iz-polipropilenovyh-trub-iz-dereva-i-iz-plastikovyh-trub.html
+http://bl.ocks.org/chiester/11267307

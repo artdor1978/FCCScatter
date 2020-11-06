@@ -14,17 +14,14 @@ body {
 #tooltip {
 	position: absolute;
 	text-align: center;
-	width: 6rem;
+	width: 12rem;
 	height: 2.5rem;
 	padding: 0.2rem;
 	font: 1rem sans-serif;
-	background: lightsteelblue;
+	background: #e1e0e0;
 	border: 0px;
 	border-radius: 0.5rem;
 	pointer-events: none;
-}
-.bar:hover {
-	fill: salmon;
 }
 .dot {
   stroke: #453e37;

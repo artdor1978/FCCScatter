@@ -8,23 +8,6 @@ let app = () => {
 		"https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/cyclist-data.json";
 	const getData = async () => {
 		const data = await d3.json(url);
-		console.log(
-			data.map(
-				(x) =>
-					new Date(
-						Date.UTC(
-							1970,
-							0,
-							1,
-							0,
-							x.Time.split(":")[0],
-							x.Time.split(":")[1]
-						)
-					)
-			)
-		);
-		const parseTime = d3.timeParse("%M:%S");
-		console.log(data.map((x) => parseTime(x.Time)));
 		renderChart(data);
 	};
 
@@ -109,23 +92,21 @@ let app = () => {
 			})
 			.on("mouseout", function (d) {
 				tooltip.transition().duration(500).style("opacity", 0);
-			})
-			.each(pulse);
+			});
+
+		pulse();
 
 		function pulse() {
-			var circle = chart.select("circle");
+			var circles = chart.selectAll("circle");
 			(function repeat() {
-				circle = circle
+				circles = circles
 					.transition()
 					.duration(2000)
-					.attr("stroke-width", 20)
-					.attr("r", 10)
+					.attr("r", 13)
 					.transition()
 					.duration(2000)
-					.attr("stroke-width", 0.5)
-					.attr("r", 200)
-					.ease("sine")
-					.each("end", repeat);
+					.attr("r", 6)
+					.on("end", repeat);
 			})();
 		}
 		const legend = legendContainer
